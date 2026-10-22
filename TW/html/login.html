@@ -10,22 +10,27 @@
 </head>
 
 <body>
-     <div class="login-container">
+    <div class="login-container">
         <div class="login-image">
             <img src="../media/logoLogin.jpg" alt="Imagine login">
         </div>
 
         <div class="separator"></div>
-        <div class="login-form">
+        <div class="login-form" id="loginForm">
             <h2>Autentificare</h2>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Parola">
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Parola">
+                <button type="submit">Login</button>
+            </form>
             <button>Conectare</button>
             <p class="register-text">
                 Nu ai cont? <a href="register.html">Înregistrează-te</a>
             </p>
         </div>
     </div>
+    <script src="../js/login_js.js"></script>
+
 </body>
 
 </html>

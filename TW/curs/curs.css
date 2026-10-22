@@ -1,0 +1,9 @@
+p {
+    color: blue;
+}
+
+.important {
+    color:green;
+    font-size: 20px;
+    padding: 10px;
+}
