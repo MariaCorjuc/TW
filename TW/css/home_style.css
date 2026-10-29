@@ -11,7 +11,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #3498db;
+    background-color: #1e4f6f;
     color: #0f3d5b;
     display: flex;
     flex-direction: column;
@@ -100,7 +100,7 @@ header nav a:hover {
 }
 
 .btn:hover {
-    background-color: #3498db;
+    background-color: #1e567b;
     color: #ffffff;
 }
 

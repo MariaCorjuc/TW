@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Universități din România</title>
+
+    <link rel="stylesheet" href="../css/universities_style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Comunitatea de Tehnologii Web 2025</h1>
+                <nav>
+                    <a href="home.html">Acasă</a>
+                    <a href="universities.html">Facultăți</a> 
+                    <a href="tehnologii.html">Tehnologii</a> 
+                    <a href="chatbot.html">ChatBot</a> 
+                </nav>
+        </div>
+    </header>
+
+    <div>
+        <h1>Universități din România</h1>
+
+        <label for="q">Filtru:</label>
+
+        <input
+            id="q"
+            type="text"
+            placeholder="caută după nume..."
+        >
+        <button id="exportBtn" type="button">Export CSV</button>
+        
+
+        <div id="status" class="status"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Țara</th>
+                    <th>Site</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+                <!--Rezultatele cu js-->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/universities_js.js"></script>
+
+</body>
+</html>
