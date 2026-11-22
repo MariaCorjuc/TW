@@ -1,0 +1,127 @@
+html, body {
+    background-color: #1e252d;
+    color: #b0b8c4;
+    margin: 0;
+    padding: 20px 0 60px 0;
+    font-family: sans-serif;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    max-width: 520px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 35px 40px;
+    background: #2b3542;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #3498db;
+}
+
+.row {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.row label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #cbd5e1;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #3d4a5b; 
+    background: #354150; 
+    color: #fff; 
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 6px;
+    accent-color: #3498db;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.two-col {
+    display: flex;
+    gap: 12px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+.checkbox-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.checkbox-grid label {
+    display: inline-flex;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background: #3498db;
+    color: #1e252d;
+}
+
+.btn.ghost {
+    background: transparent;
+    color: #cbd5e1;
+    border: 1px solid #4a5568;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}

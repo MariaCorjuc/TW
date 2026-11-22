@@ -1,0 +1,41 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+
+    <link rel="stylesheet" href="{% static 'css/chatbot_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Comunitatea de Tehnologii Web 2025</h1>
+
+            <nav>
+                <a href="{% url 'home' %}">Acasă</a>
+                <a href="{% url 'universities' %}">Facultăți</a>
+                <a href="{% url 'tehnologii' %}">Tehnologii</a>
+                <a href="{% url 'chatbot' %}">ChatBot</a>
+                <a href="{% url 'galerie' %}">Galerie</a>
+                <a href="{% url 'login' %}">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="chat-container" id="chat-container"></div>
+
+    <form id="chat-form">
+        <input type="text" id="message" placeholder="Scrie un mesaj...">
+        <button type="submit">Trimite</button>
+    </form>
+
+    <script src="{% static 'js/chatbot_js.js' %}"></script>
+
+</body>
+</html>

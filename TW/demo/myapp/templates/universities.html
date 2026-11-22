@@ -1,0 +1,63 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Universități din România</title>
+
+    <link rel="stylesheet" href="{% static 'css/universities_style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Comunitatea de Tehnologii Web 2025</h1>
+
+            <nav>
+                <a href="{% url 'home' %}">Acasă</a>
+                <a href="{% url 'universities' %}">Facultăți</a>
+                <a href="{% url 'tehnologii' %}">Tehnologii</a>
+                <a href="{% url 'chatbot' %}">ChatBot</a>
+                <a href="{% url 'galerie' %}">Galerie</a>
+                <a href="{% url 'login' %}">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <h1>Universități din România</h1>
+
+        <label for="q">Filtru:</label>
+
+        <input
+            id="q"
+            type="text"
+            placeholder="caută după nume..."
+        >
+
+        <button id="exportBtn" type="button">Export CSV</button>
+
+        <div id="status" class="status"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Țara</th>
+                    <th>Site</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+                <!-- Rezultatele sunt încărcate cu JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="{% static 'js/universities_js.js' %}"></script>
+
+</body>
+</html>

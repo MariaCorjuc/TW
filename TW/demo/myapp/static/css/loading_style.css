@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(90deg, #ffffff, #3498db);
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.loader {
+    border: 5px solid #d9d9d9;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
