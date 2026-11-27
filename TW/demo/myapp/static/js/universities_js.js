@@ -46,7 +46,7 @@ async function loadUniversities() {
 
         setStatus(`Încărcat (${all.length} rezultate).`);
     }  catch (err) {
-    console.error("Detaliu eroare:", err); // Va afișa motivul exact în F12
+    console.error("Detaliu eroare:", err); 
     setStatus("Eroare la încărcare. Încearcă din nou.");
 }
 }

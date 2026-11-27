@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    padding: 16px;
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #0f3d5b;
+    color: white;
+    padding: 25px 0;
+    border-radius: 8px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #3498db;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-view {
+    overflow: hidden;
+    border: 2px solid #334155;
+    border-radius: 15px;
+}
+
+.carousel-view img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+footer {
+    width: 100%;
+    background-color: #0f3d5b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 750px) {
+    main {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .carousel-view {
+        max-width: 100%;
+    }
+}

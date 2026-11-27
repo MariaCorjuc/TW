@@ -1,0 +1,12 @@
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: hsl(200, 100%, 60%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    z-index: 9999;
+    pointer-events: none;
+}

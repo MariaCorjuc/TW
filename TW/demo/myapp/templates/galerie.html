@@ -3,30 +3,44 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galerie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
 
-  <link rel="stylesheet" href="{% static 'css/cursor.css' %}">
-  <link rel="stylesheet" href="{% static 'css/galerie.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cursor.css' %}">
+    <link rel="stylesheet" href="{% static 'css/galerie.css' %}">
 </head>
 <body>
 
-  <!-- Container principal pentru carusel -->
-  <div class="carousel-container">
+    <header>
+        <h1>Galerie foto</h1>
+        <nav>
+            <a href="{% url 'home' %}">Acasă</a>
+            <a href="{% url 'universities' %}">Facultăți</a>
+            <a href="{% url 'tehnologii' %}">Tehnologii</a>
+            <a href="{% url 'chatbot' %}">ChatBot</a>
+            <a href="{% url 'galerie' %}">Galerie</a>
+            <a href="{% url 'meals' %}">Rețete</a>
+            <a href="{% url 'login' %}">Log out</a>
+        </nav>
+    </header>
 
-    <!-- Container pentru imaginea mare -->
-    <div class="carousel-view">
-      <img id="carousel-image"
-           src="{% static 'media/logo.jpg' %}"
-           alt="Carusel">
-    </div>
+    <main>
+        <div class="carousel-container">
+            <div class="carousel-view">
+                <img id="carousel-image"
+                     src="{% static 'media/logo.jpg' %}"
+                     alt="Imagine din galerie">
+            </div>
+        </div>
+    </main>
 
-  </div>
+    <footer>
+        <p>© 2026 - Toate drepturile rezervate</p>
+    </footer>
 
-  <!-- Scripturile JS compilate din TS -->
-  <script src="{% static 'ts/cursor.js' %}" defer></script>
-  <script src="{% static 'ts/galerie.js' %}" defer></script>
+    <script src="{% static 'js/cursor.js' %}" defer></script>
+    <script src="{% static 'js/galerie.js' %}" defer></script>
 
 </body>
 </html>

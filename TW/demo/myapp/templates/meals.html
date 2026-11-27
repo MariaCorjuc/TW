@@ -1,0 +1,44 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rețete culinare</title>
+    <link rel="stylesheet" href="{% static 'css/meals_style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Rețete</h1>
+        <nav>
+            <a href="{% url 'home' %}">Acasă</a>
+            <a href="{% url 'universities' %}">Universități</a>
+            <a href="{% url 'chatbot' %}">Chatbot</a>
+            <a href="{% url 'galerie' %}">Galerie</a>
+            <a href="{% url 'meals' %}">Rețete</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <form id="searchForm">
+            <input
+                id="queryInput"
+                type="text"
+                placeholder="Caută o rețetă..."
+                required
+            >
+            <button id="searchBtn" type="submit">Caută</button>
+        </form>
+        <button id="exportBtn" type="button">Export CSV</button>
+
+        <p id="status" aria-live="polite"></p>
+
+        <div id="results"></div>
+    </main>
+
+    <script type="module" src="{% static 'js/meals.js' %}"></script>
+</body>
+</html>

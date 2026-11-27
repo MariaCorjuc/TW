@@ -9,6 +9,7 @@
     <title>Universități din România</title>
 
     <link rel="stylesheet" href="{% static 'css/universities_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cursor.css' %}">
 </head>
 
 <body>
@@ -22,7 +23,8 @@
                 <a href="{% url 'tehnologii' %}">Tehnologii</a>
                 <a href="{% url 'chatbot' %}">ChatBot</a>
                 <a href="{% url 'galerie' %}">Galerie</a>
-                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'meals' %}">Rețete</a>
+                <a href="{% url 'login' %}">Log out</a>
             </nav>
         </div>
     </header>
@@ -58,6 +60,7 @@
     </div>
 
     <script src="{% static 'js/universities_js.js' %}"></script>
+    <script src="{% static 'js/cursor.js' %}" defer></script>
 
 </body>
 </html>

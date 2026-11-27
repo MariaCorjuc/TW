@@ -23,5 +23,5 @@ loginForm.addEventListener("submit", function (e) {
     }
 
     alert("Login reușit!");
-    window.location.href = "home.html";
+    window.location.assign("http://127.0.0.1:8000/home/");
 });

@@ -2,7 +2,7 @@
 from django.shortcuts import render
 
 def loadingscreen(request):
-    return render(request, 'loadingscreen.html')
+    return render(request, 'loading.html')
 
 def login(request):
     return render(request, 'login.html')
@@ -24,3 +24,6 @@ def chatbot(request):
 
 def galerie(request):
     return render(request, 'galerie.html')
+
+def meals(request):
+    return render(request, 'meals.html')
